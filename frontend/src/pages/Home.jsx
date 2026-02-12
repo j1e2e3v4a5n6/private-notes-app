@@ -26,7 +26,7 @@ function Home() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/notes",
+        "https://your-backend-name.onrender.com/api/notes",
         { text }
       );
 

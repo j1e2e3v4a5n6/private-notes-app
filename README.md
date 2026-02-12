@@ -74,7 +74,8 @@ Start backend:
 npm run dev
 
 Backend runs on:
-http://localhost:5000
+https://your-backend-name.onrender.com
+
 
 ---
 
