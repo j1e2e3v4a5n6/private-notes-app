@@ -21,6 +21,14 @@ This project was built as part of a Full-stack Developer technical assignment.
 - MongoDB (MongoDB Atlas)
 - Mongoose
 
+## 📂 Project Structure
+
+assignment/
+│
+├── frontend/ (React + Tailwind)
+├── backend/ (Express + MongoDB + AI)
+└── README.md
+
 ## Features
 
 ### Create Private Note
@@ -126,3 +134,18 @@ The architecture allows easy integration with:
 - Improve password strength validation
 - Add Docker support for deployment
 - Enhance UI animations and responsiveness
+
+
+# 🔐 Private Notes App – Full Stack Assignment
+
+## 🚀 Live Demo
+
+🔗 **Frontend (Live App):**  
+https://private-notes-app-1.onrender.com  
+
+🔗 **Backend API:**  
+https://private-notes-app-z53w.onrender.com  
+
+
+
+A full-stack web application that allows users to create private notes, share them securely via a unique link and password, and generate an AI-powered summary after unlocking the note.
