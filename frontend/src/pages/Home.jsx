@@ -8,6 +8,9 @@ function Home() {
   const [loading, setLoading] = useState(false);
   const [copied, setCopied] = useState(false);
 
+  // ✅ Use environment variable (works locally + on Render)
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const handleCreate = async () => {
     setError("");
     setResult(null);
@@ -26,7 +29,7 @@ function Home() {
 
     try {
       const res = await axios.post(
-        "https://private-notes-app-z53w.onrender.com/api/notes",
+        `${API_URL}/api/notes`,
         { text }
       );
 
@@ -66,10 +69,15 @@ function Home() {
         <textarea
           className="w-full border rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
           rows="4"
+          maxLength="500"
           placeholder="Write your note (max 500 characters)"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
+
+        <p className="text-sm text-gray-500 mb-4 text-right">
+          {text.length}/500
+        </p>
 
         <button
           onClick={handleCreate}
