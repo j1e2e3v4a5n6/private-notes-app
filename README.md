@@ -74,7 +74,7 @@ Start backend:
 npm run dev
 
 Backend runs on:
-https://your-backend-name.onrender.com
+https://private-notes-app-z53w.onrender.com
 
 
 ---

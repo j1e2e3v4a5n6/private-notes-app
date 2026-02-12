@@ -16,7 +16,7 @@ function NotePage() {
 
     try {
       const res = await axios.post(
-        `https://your-backend-name.onrender.com/api/notes/${id}/unlock`,
+        `https://private-notes-app-z53w.onrender.com/api/notes/${id}/unlock`,
         { password }
       );
 
@@ -32,7 +32,7 @@ function NotePage() {
 
     try {
       const res = await axios.post(
-        `https://your-backend-name.onrender.com/api/notes/${id}/summarize`
+        `https://private-notes-app-z53w.onrender.com/api/notes/${id}/summarize`
       );
 
       setSummary(res.data.summary);
