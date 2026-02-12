@@ -26,7 +26,7 @@ export const createNote = async (req, res) => {
     });
 
     res.status(201).json({
-      url: `${process.env.FRONTEND_URL}/note/${note._id}`,
+      url: `${frontendUrl}/note/${note._id}`,
       password: rawPassword,
     });
   } catch (error) {
